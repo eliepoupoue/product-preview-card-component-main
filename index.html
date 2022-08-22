@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    html{background-color: hsl(30, 38%, 92%);}
+    .preview{
+      background-color: white;
+      position: absolute;
+      left: 50%;
+      right: 50%;
+      top: 50%;
+      bottom: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 450px;
+      display: flex;
+      flex-direction: row;
+    }
+    .text{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 20px;
+      color: hsl(228, 12%, 48%);
+
+    }
+    .product{letter-spacing: 5px;}
+    .title,.new_price{
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .title{color: hsl(212, 21%, 14%); }
+    .price{
+      line-height: 0;
+      display: flex;
+      flex-direction: row;
+    }
+    .new_price{color:hsl(158, 36%, 37%) ;}
+    .ancient_price{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 20px;
+      text-decoration-line: line-through ;
+    }
+    .button{
+      display: flex;
+      color: white;
+      padding:13px;
+      justify-content: center;
+      background-color:hsl(158, 36%, 37%);
+      border: none;
+      border-radius: 10px;
+      transition-duration: 0.2s;
+    }
+    .button:hover {background-color: hsl(158, 36%, 20%)}
+    .chariot{
+      margin-right: 13px;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="preview">
+  <img src="images/image-product-desktop.jpg" alt="product">
+  <div class="text">
+    <p class="product">PERFUM</p>
+
+    <p class="title">Gabrielle Essence Eau De Parfum</p>
+
+    A floral, solar and voluptuous interpretation composed by Olivier Polge,
+    Perfumer-Creator for the House of CHANEL.
+    <div class="price">
+      <p class="new_price">$149.99</p>
+      <p class="ancient_price">$169.99</p>
+    </div>
+    <button class="button" type="button">
+      <img src="images/icon-cart.svg" alt="chariot" class="chariot">
+      Add to Cart
+    </button>
+  </div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Pouget Elie</a>.
+  </div>
+</body>
+</html>
